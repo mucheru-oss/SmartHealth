@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.home.HomeFragment"
+        android:label="@string/home_text"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/actionReadDisease"
+            app:destination="@id/diseaseDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diseasesFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.diseases.DiseasesFragment"
+        android:label="@string/diseases_text"
+        tools:layout="@layout/diseases_fragment">
+        <action
+            android:id="@+id/actionAddDisease"
+            app:destination="@id/addDiseaseFragment" />
+        <action
+            android:id="@+id/actionViewDiseaseDetails"
+            app:destination="@id/diseaseDetailsFragment" />
+        <action
+            android:id="@+id/actionAddDiseaseMeasure"
+            app:destination="@id/addDiseaseMeasureFragment" />
+        <action
+            android:id="@+id/actionAddDiseaseSymptom"
+            app:destination="@id/addDiseaseSymptomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.doctors.DoctorsFragment"
+        android:label="@string/doctors_text"
+        tools:layout="@layout/doctors_fragment" />
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.messages.MessagesFragment"
+        android:label="@string/messages_text"
+        tools:layout="@layout/messages_fragment">
+        <action
+            android:id="@+id/action_messagesFragment_to_allChatUsersFragment"
+            app:destination="@id/allChatUsersFragment" />
+        <action
+            android:id="@+id/action_messagesFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postsFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.posts.PostFragment"
+        android:label="@string/blog_text"
+        tools:layout="@layout/post_fragment">
+        <action
+            android:id="@+id/action_postsFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDiseaseFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.diseases.AddDiseaseFragment"
+        android:label="@string/add_disease_text"
+        tools:layout="@layout/fragment_add_disease" />
+    <fragment
+        android:id="@+id/addPostFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.posts.AddPostFragment"
+        android:label="@string/add_post_text"
+        tools:layout="@layout/fragment_add_post" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.profile.ProfileFragment"
+        android:label="@string/profile_text"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.profile.EditProfileFragment"
+        android:label="@string/edit_profile_text"
+        tools:layout="@layout/fragment_edit_profile">
+        <argument
+            android:name="profile"
+            android:defaultValue="@null"
+            app:argType="com.mysasse.afyasmart.data.models.Profile"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/allChatUsersFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.messages.AllChatUsersFragment"
+        android:label="@string/all_users_text"
+        tools:layout="@layout/all_chat_users_fragment">
+        <action
+            android:id="@+id/action_allChatUsersFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.messages.ChatRoomFragment"
+        android:label="@string/chat_room_text"
+        tools:layout="@layout/chat_room_fragment">
+        <argument
+            android:name="receiver"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/claimDoctorFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.ClaimDoctorFragment"
+        android:label="@string/claim_a_doctor_text"
+        tools:layout="@layout/fragment_claim_doctor" />
+    <fragment
+        android:id="@+id/diseaseDetailsFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.diseases.details.DiseaseDetailsFragment"
+        android:label="fragment_disease_details"
+        tools:layout="@layout/fragment_disease_details">
+        <argument
+            android:name="disease"
+            app:argType="com.mysasse.afyasmart.data.models.Disease" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDiseaseMeasureFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.diseases.details.measures.AddDiseaseMeasureFragment"
+        android:label="@string/add_measure_text"
+        tools:layout="@layout/fragment_add_disease_measure">
+        <argument
+            android:name="disease"
+            app:argType="com.mysasse.afyasmart.data.models.Disease" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDiseaseSymptomFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.diseases.details.symptoms.AddDiseaseSymptomFragment"
+        android:label="@string/add_symptom_text"
+        tools:layout="@layout/fragment_add_disease_symptom">
+        <argument
+            android:name="disease"
+            app:argType="com.mysasse.afyasmart.data.models.Disease" />
+    </fragment>
+
+</navigation>

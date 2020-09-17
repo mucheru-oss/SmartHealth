@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Smart Health Application</string>
+    <string name="home_activity_text">Home Activity</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="register_prompt">Don\'t have an account yet?</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="doctors_avatar_text">Doctors Avatar</string>
+    <string name="doctors_text">Doctors</string>
+    <string name="diseases_avatar_text">Diseases Avatar</string>
+    <string name="diseases_text">Diseases</string>
+    <string name="messages_avatar_text">Messages Avatar</string>
+    <string name="messages_text">Messages</string>
+    <string name="blog_text">Blog</string>
+    <string name="blog_avatar_text">Blog Avatar</string>
+    <string name="logout_text">Logout</string>
+    <string name="home_text">Home</string>
+    <string name="user_avatar_text">User Avatar</string>
+    <string name="email_address_hint">Email Address …</string>
+    <string name="name_hint">Name…</string>
+    <string name="description_hint">Description …</string>
+    <string name="add_disease_text">Add Disease</string>
+    <string name="post_image_text">Post Image</string>
+    <string name="title_hint">Title…</string>
+    <string name="body_hint">Body…</string>
+    <string name="add_post_text">Add Post</string>
+    <string name="request_permission_text">Request Permission</string>
+    <string name="permission_content">The application requires some permissions to be able to perform the expected functionality. If you don\'t accept the permission the application might not work as promised, the application needs access to your gallery, internet and others as you will be requested from the dialogs grant the access please</string>
+    <string name="grant_permission_btn_text">Grant Permission</string>
+    <string name="favourite_image_text">Favourite Image</string>
+    <string name="zero">0</string>
+    <string name="profile_text">Profile</string>
+    <string name="accounts_text">Accounts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="account_circle_drawable_text">Account Circle Drawable</string>
+    <string name="contact_hint">Contact…</string>
+    <string name="user_roles_avatar_text">User Roles Avatar</string>
+    <string name="patient_text">Patient</string>
+    <string name="edit_profile_text">Edit Profile</string>
+    <string name="something_about_you_hint">Something about you…</string>
+    <string name="update_profile_text">Update Profile</string>
+    <string name="all_users_text">All Users</string>
+    <string name="front_room_text">Front Room</string>
+    <string name="dashboard_text">Dashboard</string>
+    <string name="notifications_text">Notifications</string>
+    <string name="role_text">Role…</string>
+    <string name="message_default">Your message should go here…</string>
+    <string name="message_hint">Message…</string>
+    <string name="send_icon_text">Send Icon</string>
+    <string name="vertical_more_text">Vertical More</string>
+    <string name="chat_room_text">Chat Room</string>
+    <string name="post_excerpt_text">Insights of the post that the user can go through and understand what the post is all about</string>
+    <string name="area_of_expertise_hint">Area of Expertise…</string>
+    <string name="send_request_text">Send Request</string>
+    <string name="claim_a_doctor_text">Claim A Doctor</string>
+    <string name="doctor_warning_text">You will be vetted by the relevant application authorities to verify whether you are who you claim and whether you are really of help to the system, there after your role might change to doctor where you can access extra privileges and ability to advice on your area of expertise or any other case that you have tangible experience, please don\'t even think of lying to us, cause we will catch up with you smart ass.</string>
+    <string name="caption_text">Caption…</string>
+    <string name="warning_text">You are about to switch a users role, which means you are either going go give / revoke certain abilities to crucial parts of the system, please ensure that the correct procedure is followed</string>
+    <string name="change_role_text">Change Role</string>
+    <string name="switch_role_title_text">Switch Role</string>
+    <string name="sample_symptoms_count">20 symptoms</string>
+    <string name="sample_measures_count">30 Measures</string>
+    <string name="sample_area_of_expertise">Gynaecologist</string>
+
+    <string-array name="roles">
+        <item>Patient</item>
+        <item>Doctor</item>
+        <item>Admin</item>
+    </string-array>
+
+    <string name="disease_name_guidelines">Give a common name for the disease, it should be more that three characters in size</string>
+    <string name="disease_description_guidelines">A verbose clear description for the disease you are adding in at least 100 characters, use correct grammar</string>
+    <string name="adding_a_disease_text">Adding a disease…</string>
+    <string name="edit_disease_text">Edit Disease</string>
+    <string name="delete_disease_text">Delete Disease</string>
+    <string name="search_disease_text">Search Disease</string>
+    <string name="search_disease_hint">Search Disease…</string>
+    <string name="top_most_award_hint">Top Most Award…</string>
+    <string name="trained_institution_hint">Trained Institution…</string>
+    <string name="currently_working_where_hint">Currently Working Where…</string>
+    <string name="profession_history_hint">Profession History…</string>
+    <string name="doctors_information_text">Doctors Information</string>
+    <string name="send_request_hint">Sending Request…</string>
+    <string name="add_measure_text">Add Measure</string>
+    <string name="add_symptom_text">Add Symptom</string>
+    <string name="period_hint">Period…</string>
+    <string name="period_hint_info">At which stage of the infection do the symptoms show or after how long?</string>
+    <string name="symptom_body_help">Precise verbose description of the symptom</string>
+    <string name="adding_symptom_loading">Adding Symptom…</string>
+    <string name="type_text">Type</string>
+    <string name="curative_text">Curative</string>
+    <string name="preventive_text">Preventive</string>
+    <string name="measure_help">A way to prent or compat the infection that has actually been tested and prove and hs minimal side effects</string>
+    <string name="adding_disease_measure_text">Adding Disease Measure…</string>
+</resources>

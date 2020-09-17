@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/account_circle_avatar"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:contentDescription="@string/account_circle_drawable_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_account_circle_black_48dp" />
+
+    <TextView
+        android:id="@+id/user_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/name_hint"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintBottom_toBottomOf="@id/account_circle_avatar"
+        app:layout_constraintStart_toEndOf="@id/account_circle_avatar"
+        app:layout_constraintTop_toTopOf="@id/account_circle_avatar" />
+
+
+    <ImageView
+        android:id="@+id/phone_avatar"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/account_circle_drawable_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/account_circle_avatar"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+
+    <TextView
+        android:id="@+id/user_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/contact_hint"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintBottom_toBottomOf="@id/phone_avatar"
+        app:layout_constraintStart_toEndOf="@id/phone_avatar"
+        app:layout_constraintTop_toTopOf="@id/phone_avatar" />
+
+
+    <ImageView
+        android:id="@+id/roles_avatar"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/user_roles_avatar_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_avatar"
+        app:srcCompat="@drawable/ic_supervisor_account" />
+
+
+    <TextView
+        android:id="@+id/user_role_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/patient_text"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintBottom_toBottomOf="@id/roles_avatar"
+        app:layout_constraintStart_toEndOf="@id/roles_avatar"
+        app:layout_constraintTop_toTopOf="@id/roles_avatar" />
+
+
+    <ImageView
+        android:id="@+id/info_avatar"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/user_roles_avatar_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/roles_avatar"
+        app:srcCompat="@drawable/ic_info_black_24dp" />
+
+
+    <TextView
+        android:id="@+id/user_bio_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/patient_text"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintBottom_toBottomOf="@id/info_avatar"
+        app:layout_constraintStart_toEndOf="@id/info_avatar"
+        app:layout_constraintTop_toTopOf="@id/info_avatar" />
+
+    <Button
+        android:id="@+id/edit_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/edit_profile_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_bio_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

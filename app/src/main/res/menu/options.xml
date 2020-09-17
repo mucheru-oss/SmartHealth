@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search_option"
+        android:icon="@drawable/ic_search_white"
+        android:orderInCategory="99"
+        android:title="@string/search_disease_text"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/admin_dashboard_option"
+        android:icon="@drawable/ic_palette"
+        android:orderInCategory="100"
+        android:title="@string/dashboard_text" />
+    <item
+        android:id="@+id/doctor_role_request_option"
+        android:orderInCategory="101"
+        android:title="@string/claim_a_doctor_text" />
+    <item
+        android:id="@+id/logout_option"
+        android:orderInCategory="101"
+        android:title="@string/logout_text" />
+
+</menu>

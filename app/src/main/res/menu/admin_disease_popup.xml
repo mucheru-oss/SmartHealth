@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/edit_option"
+        android:orderInCategory="101"
+        android:title="@string/edit_disease_text" />
+    <item
+        android:id="@+id/delete_option"
+        android:orderInCategory="102"
+        android:title="@string/delete_disease_text" />
+</menu>

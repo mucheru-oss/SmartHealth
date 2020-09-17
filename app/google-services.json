@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "273852346868",
+    "firebase_url": "https://afyasmart-8f3df.firebaseio.com",
+    "project_id": "afyasmart-8f3df",
+    "storage_bucket": "afyasmart-8f3df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273852346868:android:f3786dfc20fbe7c7f3c9a1",
+        "android_client_info": {
+          "package_name": "com.mysasse.afyasmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273852346868-eb27c92747ce7hm7m2961sberrou9416.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mysasse.afyasmart",
+            "certificate_hash": "5f8b22c49413ce83bfebbc4a2307c8a9080c385d"
+          }
+        },
+        {
+          "client_id": "273852346868-ua001dfqsu2br0htba22oes8gn6a3jp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUEtZjXu_ElC5U3q7U6oWlhhjeu_MKRRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273852346868-ua001dfqsu2br0htba22oes8gn6a3jp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

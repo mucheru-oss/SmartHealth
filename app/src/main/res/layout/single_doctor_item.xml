@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:padding="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/doctor_avatar_civ"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:contentDescription="@string/user_avatar_text"
+        android:src="@drawable/ic_account_circle_black_48dp"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/details_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/doctor_avatar_civ"
+        app:layout_constraintStart_toEndOf="@id/doctor_avatar_civ"
+        app:layout_constraintTop_toTopOf="@id/doctor_avatar_civ">
+
+        <TextView
+            android:id="@+id/doctor_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            android:text="@string/name_hint"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            tools:text="@tools:sample/full_names" />
+
+        <TextView
+            android:id="@+id/doctor_area_of_expertise_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="@string/role_text"
+            android:text="@string/sample_area_of_expertise"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+            tools:text="Gynaechologist" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

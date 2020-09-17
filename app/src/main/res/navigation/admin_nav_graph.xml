@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/allUsersFragment">
+
+    <fragment
+        android:id="@+id/allUsersFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.users.AllUsersFragment"
+        android:label="@string/all_users_text"
+        tools:layout="@layout/all_users_fragment">
+        <action
+            android:id="@+id/action_allUsersFragment_to_switchRoleFragment"
+            app:destination="@id/switchRoleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allDiseasesFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.diseases.admin.AllDiseasesFragment"
+        android:label="@string/diseases_text"
+        tools:layout="@layout/all_diseases_fragment" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.notifications.NotificationsFragment"
+        android:label="@string/notifications_text"
+        tools:layout="@layout/notifications_fragment">
+        <action
+            android:id="@+id/action_notificationsFragment_to_switchRoleFragment"
+            app:destination="@id/switchRoleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/switchRoleFragment"
+        android:name="com.mysasse.afyasmart.ui.fragments.SwitchRoleFragment"
+        android:label="@string/switch_role_title_text"
+        tools:layout="@layout/fragment_switch_role">
+
+        <argument
+            android:name="userId"
+            app:argType="string" />
+
+    </fragment>
+</navigation>
